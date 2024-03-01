@@ -1,0 +1,100 @@
+@font-face {
+    font-family: Baloo;
+    src: url(font/Baloo-Regular.ttf);
+}
+
+ .container {
+    position: relative;
+    text-align: center;
+}
+
+.skov {
+    width: 800px;
+    height: 500px; 
+    background-image: url('../img/naaleskov.jpg'); 
+    background-size: cover;
+    background-position: center;
+    border-radius: 10%;
+    margin: 50px auto 0; 
+}
+
+.fungi{
+    position: absolute;
+    top: -140px;
+    left: 0.7%;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    background-image: url('../img/fungikidslogo.png'); 
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto%;
+    width: 100%;
+    pointer-events: none;    
+}
+
+.knap {
+    font-family: Baloo;
+    position: absolute;
+    top: 70%; 
+    left: 30%; 
+    transform: translate(-50%, -50%); 
+    display: inline-block;
+    padding: 20px 50px;
+    background-color: #E7732A; 
+    color:  #D5F2E3; 
+    text-decoration: none;
+    font-size: 40px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+    animation: bounce 3s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% 
+        { transform: translateY(0); }
+    25% 
+        { transform: translateY(-10px); }
+    50% 
+        { transform: translateY(0); }
+    75% 
+        { transform: translateY(-5px); } 
+  }
+
+
+.knap:hover {
+    background-color: #005238; 
+    
+}
+
+@media (max-width: 790px) {
+
+
+    .knap {
+        left: 18%; 
+
+    }
+    .skov {
+        width: auto;
+    }
+
+    .fungi {
+        position: absolute;
+        top: -10%;
+        left: -8%;
+        right: 0;
+        bottom: 0;
+        margin: 0 auto;
+        background-size: contain;
+        height: auto;
+        width: 120%;
+    }
+
+    .knap {
+        left: 12%;
+        top: 80%;
+        padding: 20px 40px;
+        font-size: 30px;
+´    }
+}

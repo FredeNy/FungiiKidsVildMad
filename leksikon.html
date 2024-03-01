@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="icon" type="image/icon" href="icon/favicon.png">    
+    <link rel="stylesheet" href="css/leksikon.css">
+    <link rel="stylesheet" href="css/mutual.css">
+    <title>FUNGI KIDS: Leksikon</title> 
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo"></a>
+    
+            <ul class="nav-menu">
+                <li class="nav-item" onclick = "window.location.href = 'udforsk.html'">
+                    <a href="udforsk.html" class="nav-link">SKOVE</a>
+                </li>
+                <li class="nav-item" onclick = "window.location.href = 'leksikon.html'">
+                    <a href="leksikon.html" class="nav-link">LEKSIKON</a>
+                </li>
+            </ul>
+    
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+<main>
+
+    <h1 class="heading">LEKSIKON</h1>
+
+    <form action="svamp.html">
+        <h2>FOR DE HURTIGE...</h2>
+        <label for="mushroom"></label>
+        <select id="mushroom" name="id">
+            <option value="278">Kantarel, almindelig</option>
+            <option value="280">Morkel, almindelig</option>
+            <option value="281">Østershat, almindelig</option>
+            <option value="285">Pigsvamp, almindelig</option>
+            <option value="298">Brun Skælrørhat</option>
+            <option value="299">Brungul Rørhat</option>
+            <option value="300">Brunstokket Rørhat</option>
+            <option value="314">Granmælkehat</option>
+            <option value="322">Honningsvamp</option>
+            <option value="324">Hummerskørhat</option>
+            <option value="330">Karl Johan</option>
+            <option value="355">Rød Birkerørhat</option>
+            <option value="373">Skællet Stilkporesvamp</option>
+            <option value="393">Stor Løghat</option>
+            <option value="413">Svovlporesvamp</option>
+            <option value="419">Tragtkantarel</option>
+            <option value="426">Vårmusseron</option>
+            <option value="431">Violet Hekseringridderhat</option>   
+            </select>
+        <input type="submit" value="LÆS MERE">
+    </form>
+
+    <div class="lexiconGrid">
+        <template id="lexiconTemplate">
+            <article class="lexiconList">
+                <p class="id"></p>
+                <a class="billedeKlik" href="svamp.html">
+                    <img src="" alt="Svamp">
+                    <p class="title"></p>
+                </a>
+            </article>
+        </template>
+    </div>
+
+    <a href="#top" class="scroll-up">
+    <img src="img/arrowup.png" alt="Arrow up" width="100" height="100">
+    </a>
+
+</main>    
+
+<footer>
+    <div class="footer-content">
+        <p>&copy;<strong> 2023 Gruppe 5</strong></p> 
+        <br>
+        <p>Multimediedesign 2. semester</p>
+        <br>
+        <p>Københavns Erhvervsakademi </p>
+    </div>
+</footer>
+
+    <script src="js/leksikon.js"></script>
+    <script src="js/mutual.js"></script>
+
+</body>
+</html>
+

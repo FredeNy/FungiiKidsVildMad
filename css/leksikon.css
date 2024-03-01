@@ -1,0 +1,149 @@
+.lexiconGrid {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+}
+
+.lexiconList {
+    padding: 10px;
+    text-align: center;
+}
+
+.lexiconList p.id {
+    font-weight: bold;
+}
+
+.lexiconList img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 100%;
+    outline: 8px solid #5E503F;;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.lexiconList img:hover {
+    outline: 8px solid #ef6605;
+}
+
+h2 {
+    font-family: Baloo;
+    color: #5E503F;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#mushroom {
+    background-color: #FFFEF4;
+}
+
+#mushroom:hover {
+    background-color: #e6e5db;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: px 0px 10px rgba(0, 0, 0, 0.4);
+}
+
+select:hover {
+    cursor: pointer;
+}
+
+form {
+    padding-bottom: 5%;
+    margin: 0 auto;
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    background-color: #E7732A;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: Baloo;
+    box-shadow: 0px 3px 16px rgba(0, 0, 0, 0.4);
+}
+
+input:hover {
+    background-color: #5E503F;
+}
+
+#lexiconGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.lexiconList img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.lexicon h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.title {
+    color: #5E503F;
+    font-family: Baloo;
+    padding: 5%;
+    font-size: 30px;
+    border-radius: 5%;
+    text-decoration: none;
+}
+
+.title:hover {
+    color: #E7732A;
+}
+
+a {
+    text-decoration: none;
+}
+
+.id {
+    display: none;
+}
+
+@media (max-width: 800px) {
+
+    .heading {
+        text-align: center;
+        font-family: Baloo;
+        color: #D5F2E3;
+        background-color: #005238;
+        border-radius: 50px;
+        margin: 10px auto;
+        max-width: 400px;
+    }
+
+    form {
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    .navbar {
+        position: relative;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media (max-width: 1050px) {
+    .lexiconGrid {
+        display: list-item;
+    }
+}
